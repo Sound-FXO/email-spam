@@ -28,9 +28,9 @@ friend_email = 'b8innabatov@yandex.ru'
 login = os.environ.get('LOGIN')
 password = os.environ.get('PASSWORD')
 
-email_text = (email_text.replace("%website%", ref_link)
-						.replace("%friend_name%", friend_name)
-						.replace("%my_name%", mailer_name))
+email_text = email_text.replace("%website%", ref_link)
+email_text = email_text.replace("%friend_name%", friend_name)
+email_text = email_text.replace("%my_name%", mailer_name)
 
 letter = """\
 From: {m_em}
